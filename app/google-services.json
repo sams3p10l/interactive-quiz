@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "346040305289",
+    "firebase_url": "https://cluemaster-749ac.firebaseio.com",
+    "project_id": "cluemaster-749ac",
+    "storage_bucket": "cluemaster-749ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346040305289:android:a0f509736652fc85",
+        "android_client_info": {
+          "package_name": "com.example.mmm.cluemaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346040305289-mni25obnghk73nntp36ujovcqvic4a9j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mmm.cluemaster",
+            "certificate_hash": "4978c1ad06c317ee98fb7096dda50813d18a53a4"
+          }
+        },
+        {
+          "client_id": "346040305289-hsg67f2urkjcs0pqeaapsfnpoi9b4not.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mmm.cluemaster",
+            "certificate_hash": "abdff61c57f31438687fac528e1c3e4131539483"
+          }
+        },
+        {
+          "client_id": "346040305289-h2e3fj5u34s40rllo7893v0j2ij5dt0r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mmm.cluemaster",
+            "certificate_hash": "31ca55abceef32e04cf9ddcf968ff27bb8a3e0e3"
+          }
+        },
+        {
+          "client_id": "346040305289-g1u0t2ovejiurk2rqdmu4o3eshar0heo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "*enter your own api_key*"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346040305289-g1u0t2ovejiurk2rqdmu4o3eshar0heo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

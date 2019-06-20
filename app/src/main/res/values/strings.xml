@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Cluemaster</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="registerbtn">REGISTER</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="full_name">Full name</string>
+    <string name="nick">Nick</string>
+    <string name="host_quiz">Host Quiz</string>
+    <string name="app_version">app v0.1.4</string>
+
+    <!--My Quizzes-->
+    <string name="my_quizzes_title">My Quizzes</string>
+
+    <!--Menu-->
+    <string name="action_share">Share</string>
+    <string name="action_logout">Logout</string>
+
+    <!--Main Activity-->
+    <string name="game_title">Cluemaster</string>
+    <string name="powerd_by">Powered by 3MMM</string>
+
+    <!--Help Activity-->
+    <string name="description">Use your knowledge and defeat your opponents in this intellectual battle royale!</string>
+    <string name="help_description2">Speed is important!\n Read your answers as fast as you can, because faster you select correct answer, more points you get!</string>
+    <string name="join_game">Join Game</string>
+
+    <!--Facebook Keys-->
+    <string name="facebook_app_id">*enter your api key here*</string>
+    <string name="fb_login_protocol_scheme">*enter your api key here*</string>
+
+    <!--Twitter Keys-->
+    <string name="twitter_CONSUMER_KEY">*enter your api key here*</string>
+    <string name="twitter_CONSUMER_SECRET">*enter your api key here*</string>
+
+    <!--Create Question Activity-->
+    <string name="create_question_description">Add visualisations to the question by \nproviding a picture, video or audio file/link:</string>
+
+    <!--Fragment Game-->
+    <string name="question">Was ist das?</string>
+    <string name="nextScoreboard">Scoreboard</string>
+
+    <string name="game_pin">GAME PIN:</string>
+    <string name="players">PLAYERS:  </string>
+    <string name="choose_quiz">Choose quiz:</string>
+    <string name="dialog_title">Enter PIN to join game</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="cancel">CANCEL</string>
+    <string name="pin">PIN</string>
+    <string name="pin_toast">Enter PIN please</string>
+    <string name="no_active_game">There is no active game with that PIN</string>
+    <string name="scoreboard_title">SCOREBOARD</string>
+    <string name="winner_finalscore">WINNER</string>
+    <string name="setTextScoreboard">"%1$s  %2$s"</string>
+
+    <!--TV Gameroom Layout-->
+    <string name="question_description_tv">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in consequat lacus.</string>
+    <string name="no_scores_toast">No games played. Go play some!</string>
+    <string name="do_you_really_need_help_to_play_quiz_wtf">You need help?</string>
+    <string name="create_your_quiz">Create your quiz</string>
+    <string name="cluemaster">CLUEMASTER</string>
+    <string name="welcome_to">Welcome to</string>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/tv_pregameroom_layout"
+            android:id="@+id/castPreGame"
+            android:visibility="visible"/>
+        <include layout="@layout/tv_gameroom_layout"
+            android:id="@+id/castGame"
+            android:visibility="visible"/>
+        <include layout="@layout/tv_finascore_layout"
+            android:id="@+id/castFinal"
+            android:visibility="visible"/>
+        <include layout="@layout/tv_scoreboard_layout"
+            android:id="@+id/castScore"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

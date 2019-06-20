@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mmm.cluemaster">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Required for Nearby Connections -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/cm_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/cm_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activities.HomeActivity"></activity>
+        <activity android:name=".Activities.AuthActivities.LoginActivity" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.AuthActivities.RegisterActivity" />
+
+        <!--Prikaz kvizova-->
+        <activity
+            android:name=".Activities.NavigationActivities.MyQuizzesActivity"
+            android:parentActivityName=".Activities.HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.HomeActivity" />
+        </activity>
+
+        <activity android:name=".Activities.NavigationActivities.HostQuizActivity" />
+        <activity
+            android:name=".Activities.PlayingActivities.PreGameRoomActivity"/>
+
+        <!--Facebook Stuff START-->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <!--Facebook Stuff END-->
+
+        <activity
+            android:name=".Activities.QuizActivities.CreateQuizActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:name=".Activities.QuizActivities.EditQuizActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:launchMode="singleInstance"/>
+
+        <!-- Aktiviti za dodavanje pitanja u kviz -->
+        <activity
+            android:name=".Activities.QuestionsActivities.AddQuestionActivity"
+            android:parentActivityName=".Activities.QuestionsActivities.QuestionsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.QuestionsActivities.QuestionsActivity" />
+        </activity>
+
+        <!-- Aktiviti za prikaz pitanja -->
+        <activity
+            android:name=".Activities.QuestionsActivities.QuestionsActivity"
+            android:parentActivityName=".Activities.NavigationActivities.MyQuizzesActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.NavigationActivities.MyQuizzesActivity" />
+        </activity>
+
+        <!-- Aktiviti za editovanje pitanja -->
+        <activity
+            android:name=".Activities.QuestionsActivities.EditQuestionActivity"
+            android:parentActivityName=".Activities.QuestionsActivities.QuestionsActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoTitleBarTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.QuestionsActivities.QuestionsActivity" />
+        </activity>
+
+        <activity
+            android:name=".Activities.NavigationActivities.JoinQuizActivity"
+            android:parentActivityName=".Activities.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".Activities.NavigationActivities.HelpActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activities.NavigationActivities.MyScoreActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".Activities.PlayingActivities.GameRoomActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+        <!-- Chromecast -->
+
+        <service android:name=".PresentationService" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

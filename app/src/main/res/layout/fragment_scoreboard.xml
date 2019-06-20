@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="@color/scoreboardColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvFrgSbTimer"
+            android:background="@drawable/countdown_timer_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btSbFrgNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="end"
+            android:background="@drawable/register_button_background"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Next Question"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:text="@string/scoreboard_title"
+        android:textColor="#FFF"
+        android:textSize="38sp"
+        android:textStyle="italic|bold" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:weightSum="60"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_firstplace"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ime i prezime 1"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/tv_secondplace"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ime i prezime 2"
+            android:textSize="22sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_thirdplace"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ime i prezime 3"
+            android:textSize="22sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_fourthplace"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ime i prezime 4"
+            android:textSize="22sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_fifthplace"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ime i prezime 5"
+            android:textSize="22sp"
+            android:textColor="@color/white"/>
+        
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_myScore"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Your score goes here"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+</LinearLayout>

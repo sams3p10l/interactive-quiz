@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#52FFC3">
+
+    <ImageView
+        android:id="@+id/ivScoreBoardExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@mipmap/ic_exit" />
+
+    <TextView
+        android:id="@+id/tvMyScoreScoreboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="My Scores"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold|italic" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_scoreboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

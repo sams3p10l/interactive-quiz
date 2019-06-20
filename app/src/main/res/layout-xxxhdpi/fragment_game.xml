@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameLayout_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:weightSum="9">
+
+    <ImageView
+        android:id="@+id/ivGameImage"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFrgGameTitle"
+        app:srcCompat="@drawable/dog" 
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/btGameFrgPlayAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/audio_button_background"
+        android:visibility="invisible"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257"
+        app:srcCompat="@drawable/ic_media_play_dark" />
+
+    <TextView
+        android:id="@+id/tvGameFrgOptinalDisplay"
+        android:layout_width="0dp"
+        android:layout_height="221dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/exoplayer"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvFrgGameTitle"
+        android:visibility="invisible">
+
+    </com.google.android.exoplayer2.ui.SimpleExoPlayerView>
+
+    <ImageView
+        android:id="@+id/ivFrgGameExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_exit" />
+
+    <TextView
+        android:id="@+id/tvFrgGameTitle"
+        android:layout_width="221dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/question"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@+id/btFrgGameScoreboard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivFrgGameExit"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Custom Answer D Component-->
+    <FrameLayout
+        android:id="@+id/buAnswerDHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/pbFrgGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buAnswerCHelp">
+
+        <Button
+            android:id="@+id/bt_answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_d_background_xxxhdpi"
+            android:textAllCaps="true" />
+
+        <ImageView
+            android:id="@+id/filter_check4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="5dp"
+            android:elevation="8dp"
+            android:src="@mipmap/ic_diamond" />
+    </FrameLayout>
+
+    <!--Custom Answer B Component-->
+    <FrameLayout
+        android:id="@+id/buAnswerCHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/pbFrgGame"
+        app:layout_constraintEnd_toStartOf="@+id/buAnswerDHelp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/bt_answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_c_background_xxxhdpi" />
+
+        <ImageView
+            android:id="@+id/filter_check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="5dp"
+            android:elevation="8dp"
+            android:src="@mipmap/ic_triangle" />
+    </FrameLayout>
+
+    <!--Custom Answer A Component-->
+    <FrameLayout
+        android:id="@+id/buAnswerAHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/buAnswerCHelp"
+        app:layout_constraintEnd_toStartOf="@+id/buAnswerBHelp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/bt_answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_a_background_xxxhdpi" />
+
+        <ImageView
+            android:id="@+id/filter_check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="5dp"
+            android:elevation="8dp"
+            android:src="@mipmap/ic_circle" />
+    </FrameLayout>
+
+    <!--Custom Answer D Component-->
+    <FrameLayout
+        android:id="@+id/buAnswerBHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/buAnswerDHelp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buAnswerAHelp">
+
+        <Button
+            android:id="@+id/bt_answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_b_background_xxxhdpi" />
+
+        <ImageView
+            android:id="@+id/filter_check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="5dp"
+            android:elevation="8dp"
+            android:src="@mipmap/ic_square" />
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/pbFrgGame"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progress_bar_background"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:max="20"
+        android:progress="15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btFrgGameScoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_button_background"
+        android:onClick="onScoreboardClick"
+        android:text="SB"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="XXXHDPI"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGameFrgOptinalDisplay" />
+
+</android.support.constraint.ConstraintLayout>

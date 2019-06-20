@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Primary Colors START-->
+    <color name="colorPrimary">#9C27B0</color>
+    <color name="colorPrimaryDark">#7B1FA2</color>
+    <color name="colorPrimaryLight">#AB47BC</color>
+    <color name="colorAccent">#8BC34A</color>
+    <!--Primary Colors END-->
+    <color name="white">#FFF</color>
+    <color name="primaryGreen">#00FF00</color>
+
+    <color name="bluePrimary">#628CFF</color>
+
+    <color name="joinGameColor">#75FA94</color>
+    <color name="scoreboardColor">#3D3A81</color>
+    <color name="ans1">#FF4D76</color>
+    <color name="ans2">#628CFF</color>
+    <color name="ans3">#52FFC3</color>
+    <color name="ans4">#75FA94</color>
+</resources>
